@@ -1,0 +1,146 @@
+/* Importa folhas de estilo globais */
+@import url("global.css");
+@import url("check-radio.css");
+
+/* Estilos para a seção principal */
+main {
+    width: 100%; /* Largura total */
+    display: flex; /* Exibe os elementos como flexíveis */
+    gap: 2rem; /* Espaço entre os elementos */
+    padding: 1rem 2rem; /* Preenchimento interno */
+    margin: 4rem 0; /* Margem externa */
+}
+
+/* Estilos para a barra lateral de categorias */
+aside.categories {
+    width: 20rem; /* Largura fixa */
+}
+
+.categories h3.category {
+    color: var(--blue); /* Cor do texto */
+    font-size: 2rem; /* Tamanho da fonte */
+    margin-bottom: 1.6rem; /* Margem inferior */
+}
+
+.categories ul li {
+    display: flex; /* Exibe os itens como flexíveis */
+    align-items: center; /* Alinha verticalmente */
+    color: var(--dark-30); /* Cor do texto */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    margin-bottom: .5rem; /* Margem inferior */
+}
+
+/* Estilos para a seção de produtos */
+.products {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+h1 {
+    color: var(--dark-30); /* Cor do texto */
+    font-size: 3.2rem; /* Tamanho da fonte */
+    margin-bottom: 3rem; /* Margem inferior */
+}
+
+.products .products-list {
+    width: 100%; /* Largura total */
+    display: flex; /* Exibe os elementos como flexíveis */
+    flex-wrap: wrap; /* Quebra de linha */
+    gap: 1.6rem; /* Espaço entre os elementos */
+}
+
+.products-list .product-card {
+    flex: .25; /* Tamanho flexível */
+    min-width: 22rem; /* Largura mínima */
+    box-shadow: 0 0 .8rem var(--dark-20); /* Sombra */
+    border-radius: .8rem; /* Raio da borda */
+    margin-bottom: 1rem; /* Margem inferior */
+    transition: all .5s ease-in-out; /* Transição suave */
+}
+
+.products-list .product-card:hover {
+    transform: scale(1.03); /* Aumenta ligeiramente no hover */
+}
+
+/* Estilos para as imagens dos produtos */
+.product-card .card-product-image {
+    position: relative; /* Posicionamento relativo */
+    text-align: center; /* Alinhamento do texto */
+    padding: 1rem 0; /* Preenchimento interno */
+}
+
+.product-card .card-product-image img {
+    max-width: 15rem; /* Largura máxima */
+    height: 15rem; /* Altura fixa */
+}
+
+/* Estilos para o ícone de favorito */
+.card-product-image .bi-suit-heart-fill {
+    position: absolute; /* Posicionamento absoluto */
+    top: 1rem; /* Posicionamento no topo */
+    right: 1.6rem; /* Posicionamento na direita */
+    font-size: 2rem; /* Tamanho do ícone */
+    color: var(--dark-20); /* Cor do ícone */
+    cursor: pointer; /* Cursor do mouse */
+}
+
+.card-product-image .bi-suit-heart-fill:hover {
+    color: var(--blue); /* Cor do ícone no hover */
+}
+
+.favorite {
+    color: var(--blue) !important; /* Cor do ícone favorito */
+}
+
+/* Estilos para informações do produto */
+.card-product-info {
+    padding: 2rem; /* Preenchimento interno */
+}
+
+.card-product-info h4.product-name {
+    font-size: 1.8rem; /* Tamanho da fonte */
+    color: var(--blue); /* Cor do texto */
+    margin-bottom: .2rem; /* Margem inferior */
+}
+
+.card-product-info span.old-price {
+    text-decoration: line-through; /* Decoração de linha */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: var(--dark-20); /* Cor do texto */
+}
+
+.card-product-info h5.new-price {
+    font-size: 1.8rem; /* Tamanho da fonte */
+    color: var(--dark-30); /* Cor do texto */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+.card-product-info button.add-bag {
+    width: 100%; /* Largura total */
+    background-color: var(--dark-10); /* Cor de fundo */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    color: var(--dark-30); /* Cor do texto */
+    border: .1rem solid var(--dark-20); /* Borda */
+    border-radius: .5rem; /* Raio da borda */
+    padding: .5rem; /* Preenchimento */
+    cursor: pointer; /* Cursor do mouse */
+    transition: all .3s ease-in-out; /* Transição suave */
+}
+
+.card-product-info button.add-bag:hover {
+    background-color: var(--blue); /* Cor de fundo no hover */
+    color: var(--light-100); /* Cor do texto no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .products-list .product-card {
+        flex: 1; /* Tamanho flexível */
+    }
+}
+
+@media (max-width: 426px) {
+    main {
+        flex-direction: column; /* Muda para coluna */
+        padding: 1rem; /* Preenchimento */
+    }
+}

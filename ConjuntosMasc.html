@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="auto">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="keywords" content="MyStore">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula risus gravida erat placerat efficitur. Nullam malesuada tellus vel eros tincidunt cursus. Fusce condimentum ex quis enim bibendum efficitur. Curabitur et nulla at enim maximus posuere. Nunc id nunc a orci facilisis vulputate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <script src="inputMasks.js" defer></script>
+    <script src="searchCep.js" defer></script>
+    <title>MyStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="shortcut icon" href="logo (2).png" type="logo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Cabeçalho -->
+    <header id="header">
+<!-- Logo e navegação -->
+        <a href="index.html"><h1>M<span class="point">y</span>Store</h1></a>
+
+          <!-- Formulário de pesquisa e ícones de navegação -->
+        <nav class="navbar navbar-dark">
+            <a class="navbar-brand"></a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+          </nav>
+          
+           <!-- Ícones de acesso rápido -->
+        <nav id="nav">
+            <ul id="menu">
+
+                <a href="log.html"><i class="bi bi-person"></i> </a>
+                <a href="link"><i class="bi bi-bag"></i></a>
+                <a href="link"><i class="bi bi-heart-fill"></i></a>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    
+    <!-- Conteúdo Principal -->
+    <main>
+
+ <!-- Barra lateral de categorias -->
+<aside class="categories">
+
+    <h3 class="category">Categorias</h3>
+ <!-- Itens de categoria -->
+    <ul id="listaItens"> <!-- Adicione o id "listaItens" aqui -->
+        <li><input type="checkbox" name="" id="camisas" checked /> camisas </li>
+            <li><input type="checkbox" name="" id="conjuntos" /> Conjuntos</li>
+            <li><input type="checkbox" name="" id="conjuntos" /> Bermudas</li>
+    </ul>
+
+</aside>
+
+
+  <!-- Seção de produtos -->
+        <section class="products">
+
+            <h1>Masculino</h1>
+
+<!-- Lista de produtos -->
+            <div class="products-list">
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj1.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Conjunto Camisa e Short Florido Havaiano Estampado Listrado Adulto Masculino Tecido de Viscose com elastano</h4>
+
+                        <div class="price-before">
+                            <span class="old-price">De R$119,90</span>
+                        </div>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$79,90</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+                
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj2.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">TS SHEIN Homens ocasional outfit sólido short e camiseta malha confortável</h4>
+
+                        <div class="price-before">
+                            <span class="old-price">De R$115,00 </span>
+                        </div>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$99,99</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj3.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Halloween Outfit de duas peças Masculino</h4>
+
+                        <div class="price-before">
+                            <span class="old-price">De R$132,95</span>
+                        </div>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$126,30 </h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj4.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Manfinity Homme Homens Gráfico Floral E Slogan Camiseta & Cintura Com Cordão Conjunto De Shorts</h4>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$126,30</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj5.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Manfinity Homme homens carta gráfica slogan detalhe corrigido Camiseta & cintura com cordão Shorts</h4>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$123,49</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj6.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Manfinity Homme homens carta gráfica Camiseta & calças de treino</h4>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$171,99</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj7.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Conjunto Masculino Casual De Calça E Camisa De Manga Comprida Com Estilo </h4>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$203,90</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj8.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Conjunto De Duas Peças Com Gola Redonda Para Homem</h4>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$210,95</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj9.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Cordão Bolso Desenho Animado Casual Outfit de duas peças Masculino</h4>
+
+                        <div class="price-before">
+                            <span class="old-price">De R$217,90</span>
+                        </div>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$196,11</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="card-product-image">
+                        <img src="./imgMasculinas/Cj10.webp" alt="Imagem produto" />
+                        <i class="bi bi-suit-heart-fill"></i>
+                    </div>
+
+                    <div class="card-product-info">
+                        <h4 class="product-name">Manfinity Homme Homens Bloco De Cores Camiseta & Cintura Com Cordão Calças De Treino</h4>
+
+                        <div class="price-now">
+                            <h5 class="new-price">R$164,95</h5>
+                        </div>
+
+                        <button class="add-bag">
+                            <i class="bi bi-bag-fill"></i>
+                            Adicionar à sacola
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+<!-- Rodapé -->
+<footer id="footer">
+    <!-- Links para redes sociais -->
+          <p>Nos siga nas redes sociais:</p>
+  
+          <ul>
+  
+              <li><a href="https://www.tiktok.com/@my_storepy?_t=8huGnpAWFDZ&_r=1"><i class="fa-brands fa-tiktok fa-bounce"></i></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100090416111991&mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-bounce"></i></a></li>
+              <li><a href="https://instagram.com/mystorenatal?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram fa-bounce"></i></a></li>
+              
+          </ul>
+       <!-- Informações sobre desenvolvimento -->
+          <p>Desenvolvido por Evelyn Maria e darlane Ribeiro |<span class="point">.</span></p>
+  
+      </footer>
+    <script src="js/menu.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Adiciona um ouvinte de evento para a lista
+            document.getElementById("listaItens").addEventListener("change", function(event) {
+                // Verifica se o alvo do evento é uma caixa de seleção
+                if (event.target.type === "checkbox") {
+                    // Verifica se a caixa de seleção está marcada
+                    if (event.target.checked) {
+                        // Redireciona para a tela desejada
+                        redirecionarParaTela(event.target.id);
+                    }
+                }
+            });
+    
+            // Função para redirecionar para a tela desejada
+            function redirecionarParaTela(itemSelecionado) {
+                // Você pode personalizar essa lógica de redirecionamento
+                // por exemplo, redirecionando para diferentes URLs com base nos itens selecionados
+                switch (itemSelecionado) {
+                    case "camisas":
+                        window.location.href = "Masculino.html";
+                        break;
+                    case "conjuntos":
+                        window.location.href = "ConjuntosMasc.html";
+                        break;
+                    case "short":
+                        window.location.href = "ShortsMasc.html";
+                        break;
+                    // Adicione mais casos conforme necessário
+                    default:
+                        break;
+                }
+            }
+        });
+    </script>
+    
+
+
+</body>
+
+</html>

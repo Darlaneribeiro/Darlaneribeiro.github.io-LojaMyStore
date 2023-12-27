@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="auto">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="keywords" content="MyStore">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula risus gravida erat placerat efficitur. Nullam malesuada tellus vel eros tincidunt cursus. Fusce condimentum ex quis enim bibendum efficitur. Curabitur et nulla at enim maximus posuere. Nunc id nunc a orci facilisis vulputate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <script src="inputMasks.js" defer></script>
+    <script src="searchCep.js" defer></script>
+    <title>MyStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="shortcut icon" href="logo (2).png" type="logo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Carrinho de Compras</h1>
+  
+  <div id="produtos">
+    <h2>Produtos Disponíveis</h2>
+    <p><div class="product-card">
+
+        <div class="card-product-image">
+            <img src="imgFeminino/c01.jpg" alt="Imagem produto" />
+            <i class="bi bi-suit-heart-fill"></i>
+        </div>
+
+        <div class="card-product-info">
+            <h4 class="product-name">  Privé sólido Top cami & Shorts & botão frontal Camisa</h4>
+
+            <div class="price-now">
+                <h5 class="new-price">R$164,90</h5>
+            </div>
+            <button onclick="adicionarItem('Privé sólido Top cami & Shorts & botão frontal Camisa', 164.00)">Adicionar</button></p>
+    
+        </div>
+    <p><div class="product-card">
+
+        <div class="card-product-image">
+            <img src="imgFeminino/c1.jpg" alt="Imagem produto" />
+            <i class="bi bi-suit-heart-fill"></i>
+        
+
+        <div class="card-product-info">
+            <h4 class="product-name">Privé Blusa e Bermudas Gola de lapela</h4>
+
+            <div class="price-before">
+                <span class="old-price">De R$114,95</span>
+            </div>
+
+            <div class="price-now">
+                <h5 class="new-price">R$109,20</h5>
+            </div>
+
+            <button onclick="adicionarItem('Privé Blusa e Bermudas Gola de lapela2', 109,20)">Adicionar</button></p>
+        
+    </div>
+
+    <p> <div class="product-card">
+
+        <div class="card-product-image">
+            <img src="./imgMasculinas/Cj5.webp" alt="Imagem produto" />
+            <i class="bi bi-suit-heart-fill"></i>
+        </div>
+
+        <div class="card-product-info">
+            <h4 class="product-name">Manfinity Homme homens carta gráfica slogan detalhe corrigido Camiseta & cintura com cordão Shorts</h4>
+
+            <div class="price-now">
+                <h5 class="new-price">R$123,49</h5>
+            </div>
+
+            <button onclick="adicionarItem('Manfinity Homme homens carta gráfica slogan detalhe corrigido Camiseta & cintura com cordão Shorts', 123,490)">Adicionar</button></p>
+   
+        </div>
+
+
+        <p><div class="product-card">
+
+            <div class="card-product-image">
+                <img src="./imgMasculinas/Cj6.webp" alt="Imagem produto" />
+                <i class="bi bi-suit-heart-fill"></i>
+            </div>
+
+            <div class="card-product-info">
+                <h4 class="product-name">Manfinity Homme homens carta gráfica Camiseta & calças de treino</h4>
+
+                <div class="price-now">
+                    <h5 class="new-price">R$171,99</h5>
+                </div>
+    
+                <button onclick="adicionarItem('Manfinity Homme homens carta gráfica Camiseta & calças de treino', 171,99)">Adicionar</button></p>
+       
+            </div>
+
+            <p><div class="product-card">
+
+                <div class="card-product-image">
+                    <img src="./imgAcessorios/acessorio16.jpg" alt="Imagem produto" />
+                    <i class="bi bi-suit-heart-fill"></i>
+                </div>
+
+                <div class="card-product-info">
+                    <h4 class="product-name">Peça Infantil Tartaruga</h4>
+
+                  
+                    <div class="price-before">
+                        <span class="old-price">De R$120,00</span>
+                    </div>
+
+                    <div class="price-now">
+                        <h5 class="new-price">R$80,00</h5>
+                    </div>
+
+                    <button onclick="adicionarItem('Peça Infantil Tartaruga', 80,90)">Adicionar</button></p>
+           
+                </div>
+    <p> <div class="product-card">
+
+        <div class="card-product-image">
+            <img src="./imgAcessorios/acessorio17.jpg" alt="Imagem produto" />
+            <i class="bi bi-suit-heart-fill"></i>
+        </div>
+
+        <div class="card-product-info">
+            <h4 class="product-name">Peça Pulseira Minimalista Ponto De Luz Azul</h4>
+
+          
+            <div class="price-before">
+                <span class="old-price">De R$89,90</span>
+            </div>
+
+            <div class="price-now">
+                <h5 class="new-price">R$54,90</h5>
+            </div><button onclick="adicionarItem('Peça Pulseira Minimalista Ponto De Luz Azul', 89,90)">Adicionar</button></p>
+  </div>
+
+  <div id="carrinho">
+    <h2>Seu Carrinho</h2>
+    <ul id="itens-carrinho"></ul>
+    <p id="total">Total: R$0.00</p>
+    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+  </div>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>
